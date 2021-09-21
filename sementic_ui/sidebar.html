@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="sementic/dist/semantic.css">
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+                integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+                crossorigin="anonymous"></script>
+        <script src="sementic/dist/semantic.js"></script>
+        <style>
+
+        </style>
+    </head>
+    <body>
+        <div class="ui sidebar inverted vertical menu">
+          <a class="item">
+            1
+          </a>
+          <a class="item">
+            2
+          </a>
+          <a class="item">
+            3
+          </a>
+        </div>
+        <div class="pusher">
+            <button id="menu" class="ui button">menu</button>
+          lorem ipsum454545
+        </div>
+        <script>
+            $('#menu').click(function() {
+                $('.ui.sidebar').sidebar('setting', 'transition', 'overlay').sidebar('toggle');
+            })
+        </script>
+      </body>
+</html>
